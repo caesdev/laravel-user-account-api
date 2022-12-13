@@ -13,7 +13,13 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     protected $fillable = [
+        'id',
         'name',
         'last_name'
     ];
+
+    public function account()
+    {
+        return $this->hasMany('App\Models\Account');
+    }
 }

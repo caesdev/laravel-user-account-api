@@ -1,2 +1,9 @@
 # Aplicación REST API sencilla con Laravel
-En principio para poner en práctica la relación user -> account
+
+### Petición para crear una cuenta, añadir saldo y crear un usuario dado el caso que el usuario al que se asocia la cuenta no exista
+Datos para realizar la petición
+
+```
+Request POST /event { "type": "deposit", "destination": 1, "amount": 10.25, "name": "Name", "last_name": "LastName" }
+201
+```
